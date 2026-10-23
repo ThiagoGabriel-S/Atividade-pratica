@@ -1,2 +1,2 @@
-# Atividade-pratica
-Atividade prática da aula 5 de Front-End
+# Atividades-praticas
+Atividades práticas da aula 5 de Front-End
