@@ -1,80 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca escoalr</title>
+    <title>Desafios</title>
+    <style>
+        :root {
+            --bg: #f6f7f9;
+            --card: #ffffff;
+            --text: #222;
+            --muted: #666;
+            --accent: #5b4bdb;
+            --border: #e2e4e9;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem 1rem;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 0 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        ol {
+            margin: 0;
+            padding: 1rem 1.25rem 1rem 2.6rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        li {
+            margin: 0;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li::marker {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Biblioteca escolar</h1>
+    <main>
+        <h1>Desafios - Aula 4</h1>
 
-    <nav>
-        <a href="#passos">Como solicitar</a>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#solicitação">Solicitação</a>
-    </nav>
-
-    <h2 id="passos">Como solicitar um livro</h2>
-
-    <ol>
-        <li>Consulte o catálogo de livros</li>
-        <li>Escolha o livro desejado</li>
-        <li>Preencha o formulário de solicitação</li>
-    </ol>
-
-    <p>A biblioteca atende aos estudantes da escola.</p>
-    <p>Consulte as informações antes de escolher um livro.</p>
-    <p>Verifique o título e o autor da obra.</p>
-    <p>Informe seus dados corretamente.</p>
-    <p>Aguarde a confirmação da solicitação.</p>
-
-    <h2 id="catalogo">Catálogo de Livros</h2>
-
-    <table border="1">
-        <tr>
-            <th>Livro</th>
-            <th>Autor</th>
-            <th>Categoria</th>
-        </tr>
-        <tr>
-            <td>O Pequeno Príncipe</td>
-            <td>Antoine de Saint-Exupéry</td>
-            <td>Ficção</td>
-        </tr>
-        <tr>
-            <td>Dom Casmurro</td>
-            <td>Machado de Assis</td>
-            <td>Literatura Brasileira</td>
-        </tr>
-        <tr>
-            <td>A Hora da Estrela</td>
-            <td>Clarice Lispector</td>
-            <td>Literatura Brasileira</td>
-        </tr>
-    </table>
-    <p>O catalogo apresenta exemplos de obras disponíveis para consulta</p>
-    <p>A categoria ajuda a identificar o tipo de livro</p>
-    <p>Escolha uma obra de seu interesse</p>
-    <p>Confira o título antes de preencher a solicitação</p>
-    <p>A próxima etapa é informar seus dados</p>
-
-    <h2 id="solicitacao">Solicitação de empréstimo</h2>
-
-    <form action="https://httpbin.org/post" method="post">
-
-    <label for="estudante">Nome do estudante</label>
-    <input type="text" id="estudante" name="estudante" required>
-    <br><br>
-
-    <label for="prazo">Prazo desejado</label>
-    <select id="prazo" name="prazo">
-        <option>7 dias</option>
-        <option>14 dias</option>
-    </select>
-    <br><br>
-
-    <button type="submit">Enviar solicitação</button>
-</form>
-
+        <ol>
+            <li><a href="atividade_1.html">Atividade 1</a></li>
+            <li><a href="atividade_2.html">Desafio 2</a></li>
+        </ol>
+    </main>
 </body>
+
 </html>
