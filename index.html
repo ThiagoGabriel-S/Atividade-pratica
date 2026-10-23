@@ -1,64 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividades escolares</title>
+    <title>Biblioteca escoalr</title>
 </head>
 <body>
-    <h1>Atividades escolares</h1>
-        <nav>
-            <a href="#etapas">Etapas</a>
-            |
-            <a href="#atividades">Atividade</a>
-            |
-            <a href ="#inscricao">Inscrição</a>
-        </nav>
-        <h2 id="etapas">
-            <ol>
-                    <li>Escolha uma atividade</li>
-                    <li>Preencha seu formulário</li>
-                    <li>Envie sua inscrição</li>
-            </ol>
-            <p>Leia as orientações</p>
-            <p>As atividades são destinadas aos estudantes da escola</p>
-            <p>Consulte os horários e escolha a opção desejada</p>
-            <p>Organize seus dados antes de preencher a inscrição</p>
-            <p>Confira todas as informações</p>
+    <h1>Biblioteca escolar</h1>
 
-            <h2 id="atividades"></h2>
-                <table border="1">
-                    <tr>
-                        <th>Atividade</th> <th>Turno</th> 
-                    </tr>
+    <nav>
+        <a href="#passos">Como solicitar</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#solicitação">Solicitação</a>
+    </nav>
 
-                    <tr>
-                        <td>Desenvolvimento web</td> <td>Manhã</td> 
-                    </tr>
-                    <tr>
-                        <td>Robótica</td> <td>Tarde</td> 
-                    </tr>
-                </table>
-                <p>Desenvolvimento web permite conhecer a criação de páginas</p>
-                <p>Robótica explora a construção e a programação de projetos</p>
-                <p>Escolha a atividade de acordo com seu interesse</p>
-                <p>Depois, vá até a seção de inscrição</p>
-                <p>Preencha os campos com atenção</p>
+    <h2 id="passos">Como solicitar um livro</h2>
 
-                <h2 id="inscricao">Inscrição</h2>
-                <form action="https://httpbin.org/post" method="post">
-                    <label for="nome">Nome:</label> 
-                    <input id="nome" name="nome" required>
+    <ol>
+        <li>Consulte o catálogo de livros</li>
+        <li>Escolha o livro desejado</li>
+        <li>Preencha o formulário de solicitação</li>
+    </ol>
 
-                    <br><br>
+    <p>A biblioteca atende aos estudantes da escola.</p>
+    <p>Consulte as informações antes de escolher um livro.</p>
+    <p>Verifique o título e o autor da obra.</p>
+    <p>Informe seus dados corretamente.</p>
+    <p>Aguarde a confirmação da solicitação.</p>
 
-                <label for="atividade">Atividade:</label> 
-                <select id="atividade" name="atividade">
-                    <option>Desenvolvimento web</option>
-                    <option>Robótica</option>
-                </select>
-                    <br><br>
-                <button type="submit">Enviar inscrição</button>
-                </form>
-    </body>
+    <h2 id="catalogo">Catálogo de Livros</h2>
+
+    <table border="1">
+        <tr>
+            <th>Livro</th>
+            <th>Autor</th>
+            <th>Categoria</th>
+        </tr>
+        <tr>
+            <td>O Pequeno Príncipe</td>
+            <td>Antoine de Saint-Exupéry</td>
+            <td>Ficção</td>
+        </tr>
+        <tr>
+            <td>Dom Casmurro</td>
+            <td>Machado de Assis</td>
+            <td>Literatura Brasileira</td>
+        </tr>
+        <tr>
+            <td>A Hora da Estrela</td>
+            <td>Clarice Lispector</td>
+            <td>Literatura Brasileira</td>
+        </tr>
+    </table>
+    <p>O catalogo apresenta exemplos de obras disponíveis para consulta</p>
+    <p>A categoria ajuda a identificar o tipo de livro</p>
+    <p>Escolha uma obra de seu interesse</p>
+    <p>Confira o título antes de preencher a solicitação</p>
+    <p>A próxima etapa é informar seus dados</p>
+
+    <h2 id="solicitacao">Solicitação de empréstimo</h2>
+
+    <form action="https://httpbin.org/post" method="post">
+
+    <label for="estudante">Nome do estudante</label>
+    <input type="text" id="estudante" name="estudante" required>
+    <br><br>
+
+    <label for="prazo">Prazo desejado</label>
+    <select id="prazo" name="prazo">
+        <option>7 dias</option>
+        <option>14 dias</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Enviar solicitação</button>
+</form>
+
+</body>
 </html>
